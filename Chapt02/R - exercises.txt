@@ -1,0 +1,319 @@
+R version 3.3.0 (2016-05-03) -- "Supposedly Educational"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(reshape2)
+Error in library(reshape2) : there is no package called ‘reshape2’
+> library(dplyr)
+Error in library(dplyr) : there is no package called ‘dplyr’
+> install.packages("dplyr")
+Installing package into ‘C:/Users/sunqhe/R/win-library/3.3’
+(as ‘lib’ is unspecified)
+--- Please select a CRAN mirror for use in this session ---
+also installing the dependencies ‘bindr’, ‘assertthat’, ‘bindrcpp’, ‘glue’, ‘magrittr’, ‘pkgconfig’, ‘rlang’, ‘R6’, ‘Rcpp’, ‘tibble’, ‘BH’, ‘plogr’
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/bindr_0.1.zip'
+Content type 'application/zip' length 14700 bytes (14 KB)
+downloaded 14 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/assertthat_0.2.0.zip'
+Content type 'application/zip' length 43676 bytes (42 KB)
+downloaded 42 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/bindrcpp_0.2.zip'
+Content type 'application/zip' length 638865 bytes (623 KB)
+downloaded 623 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/glue_1.2.0.zip'
+Content type 'application/zip' length 72371 bytes (70 KB)
+downloaded 70 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/magrittr_1.5.zip'
+Content type 'application/zip' length 149891 bytes (146 KB)
+downloaded 146 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/pkgconfig_2.0.1.zip'
+Content type 'application/zip' length 19752 bytes (19 KB)
+downloaded 19 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/rlang_0.1.4.zip'
+Content type 'application/zip' length 465675 bytes (454 KB)
+downloaded 454 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/R6_2.2.2.zip'
+Content type 'application/zip' length 316513 bytes (309 KB)
+downloaded 309 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/Rcpp_0.12.14.zip'
+Content type 'application/zip' length 4345251 bytes (4.1 MB)
+downloaded 4.1 MB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/tibble_1.3.4.zip'
+Content type 'application/zip' length 675226 bytes (659 KB)
+downloaded 659 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/BH_1.65.0-1.zip'
+Content type 'application/zip' length 17006432 bytes (16.2 MB)
+downloaded 16.2 MB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/plogr_0.1-1.zip'
+Content type 'application/zip' length 17653 bytes (17 KB)
+downloaded 17 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/dplyr_0.7.4.zip'
+Content type 'application/zip' length 2893582 bytes (2.8 MB)
+downloaded 2.8 MB
+
+package ‘bindr’ successfully unpacked and MD5 sums checked
+package ‘assertthat’ successfully unpacked and MD5 sums checked
+package ‘bindrcpp’ successfully unpacked and MD5 sums checked
+package ‘glue’ successfully unpacked and MD5 sums checked
+Warning: unable to move temporary installation ‘C:\Users\sunqhe\R\win-library\3.3\fileea433c5255f\glue’ to ‘C:\Users\sunqhe\R\win-library\3.3\glue’
+package ‘magrittr’ successfully unpacked and MD5 sums checked
+package ‘pkgconfig’ successfully unpacked and MD5 sums checked
+package ‘rlang’ successfully unpacked and MD5 sums checked
+package ‘R6’ successfully unpacked and MD5 sums checked
+package ‘Rcpp’ successfully unpacked and MD5 sums checked
+package ‘tibble’ successfully unpacked and MD5 sums checked
+package ‘BH’ successfully unpacked and MD5 sums checked
+package ‘plogr’ successfully unpacked and MD5 sums checked
+package ‘dplyr’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+        C:\Users\sunqhe\AppData\Local\Temp\Rtmpo16TK4\downloaded_packages
+> 
+> library(dplyr)
+Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  there is no package called ‘glue’
+In addition: Warning message:
+package ‘dplyr’ was built under R version 3.3.3 
+Error: package or namespace load failed for ‘dplyr’
+> local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
++ if(nchar(pkg)) library(pkg, character.only=TRUE)})
+Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  there is no package called ‘glue’
+In addition: Warning message:
+package ‘dplyr’ was built under R version 3.3.3 
+Error: package or namespace load failed for ‘dplyr’
+> utils:::menuInstallPkgs()
+also installing the dependency ‘glue’
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/glue_1.2.0.zip'
+Content type 'application/zip' length 72371 bytes (70 KB)
+downloaded 70 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/dplyr_0.7.4.zip'
+Content type 'application/zip' length 2893582 bytes (2.8 MB)
+downloaded 2.8 MB
+
+package ‘glue’ successfully unpacked and MD5 sums checked
+package ‘dplyr’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+        C:\Users\sunqhe\AppData\Local\Temp\Rtmpo16TK4\downloaded_packages
+> local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
++ if(nchar(pkg)) library(pkg, character.only=TRUE)})
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning message:
+package ‘dplyr’ was built under R version 3.3.3 
+> library(dplyr)
+> utils:::menuInstallPkgs()
+also installing the dependencies ‘stringi’, ‘plyr’, ‘stringr’
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/stringi_1.1.6.zip'
+Content type 'application/zip' length 14293839 bytes (13.6 MB)
+downloaded 13.6 MB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/plyr_1.8.4.zip'
+Content type 'application/zip' length 1219858 bytes (1.2 MB)
+downloaded 1.2 MB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/stringr_1.2.0.zip'
+Content type 'application/zip' length 148795 bytes (145 KB)
+downloaded 145 KB
+
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/reshape2_1.4.2.zip'
+Content type 'application/zip' length 609577 bytes (595 KB)
+downloaded 595 KB
+
+package ‘stringi’ successfully unpacked and MD5 sums checked
+package ‘plyr’ successfully unpacked and MD5 sums checked
+package ‘stringr’ successfully unpacked and MD5 sums checked
+package ‘reshape2’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+        C:\Users\sunqhe\AppData\Local\Temp\Rtmpo16TK4\downloaded_packages
+> local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
++ if(nchar(pkg)) library(pkg, character.only=TRUE)})
+Warning message:
+package ‘reshape2’ was built under R version 3.3.3 
+> library(reshape2)
+> local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
++ if(nchar(pkg)) library(pkg, character.only=TRUE)})
+> utils:::menuInstallPkgs()
+trying URL 'https://muug.ca/mirror/cran/bin/windows/contrib/3.3/data.table_1.10.4-3.zip'
+Content type 'application/zip' length 1507088 bytes (1.4 MB)
+downloaded 1.4 MB
+
+package ‘data.table’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+        C:\Users\sunqhe\AppData\Local\Temp\Rtmpo16TK4\downloaded_packages
+> local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
++ if(nchar(pkg)) library(pkg, character.only=TRUE)})
+data.table 1.10.4.3
+  The fastest way to learn (by data.table authors): https://www.datacamp.com/courses/data-analysis-the-data-table-way
+  Documentation: ?data.table, example(data.table) and browseVignettes("data.table")
+  Release notes, videos and slides: http://r-datatable.com
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:reshape2’:
+
+    dcast, melt
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+Warning message:
+package ‘data.table’ was built under R version 3.3.3 
+> library(data.table)
+> ratings = read.csv("~/movie_rating.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'C:\Users\sunqhe/movie_rating.csv': No such file or directory
+> ratings = read.csv("~/movie_rating.csv")
+> head(ratings)
+         critic              title rating
+1 Jack Matthews  Lady in the Water    3.0
+2 Jack Matthews  Snakes on a Plane    4.0
+3 Jack Matthews  You Me and Dupree    3.5
+4 Jack Matthews   Superman Returns    5.0
+5 Jack Matthews The Night Listener    3.0
+6  Mick LaSalle  Lady in the Water    3.0
+> dim(ratings)
+[1] 31  3
+> str(ratings)
+'data.frame':   31 obs. of  3 variables:
+ $ critic: Factor w/ 6 levels "Claudia Puig",..: 3 3 3 3 3 5 5 5 5 5 ...
+ $ title : Factor w/ 6 levels "Just My Luck",..: 2 3 6 4 5 2 3 1 4 6 ...
+ $ rating: num  3 4 3.5 5 3 3 4 2 3 2 ...
+> 
+> levels(ratings$critic)
+[1] "Claudia Puig"  "Gene Seymour"  "Jack Matthews" "Lisa Rose"     "Mick LaSalle"  "Toby"         
+> levels(ratings$title)
+[1] "Just My Luck"       "Lady in the Water"  "Snakes on a Plane"  "Superman Returns"   "The Night Listener" "You Me and Dupree" 
+> sort(unique(ratings$rating).decreasing=F)
+Error: unexpected symbol in "sort(unique(ratings$rating).decreasing"
+> sort(unique(ratings$rating).decreasing = F)
+Error: unexpected symbol in "sort(unique(ratings$rating).decreasing"
+> sort(unique(ratings$rating), decreasing = F)
+[1] 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0
+> #data processing and formatting
+> movie_ratings = as.data.frame(acast(ratings, title~critic, value.var="rating"))
+> view(movie_ratings)
+Error: could not find function "view"
+> View(movie_ratings)
+> #similarity calculation
+> sim_users = cor(movie_ratings[,1:6],use="complete.obs")
+> #sim_users[colnames(sim_users) == 'Toby']
+> sim_users[,6]
+ Claudia Puig  Gene Seymour Jack Matthews     Lisa Rose  Mick LaSalle          Toby 
+    0.8934051     0.3812464     0.6628490     0.9912407     0.9244735     1.0000000 
+> View(movie_ratings[,1:6])
+> #predicting the unknown values
+> #seperating the non rated movies of Toby
+> rating_critic  = setDT(movie_ratings[colnames(movie_ratings)[6]],keep.rownames = TRUE)[]
+> names(rating_critic) = c('title','rating')
+> titles_na_critic = rating_critic$title[is.na(rating_critic$rating)]
+> View(titles_na_critic)
+> ratings_t =ratings[ratings$title %in% titles_na_critic,]
+> View(ratings_t)
+> #add similarity values for each user as new variable
+> x = (setDT(data.frame(sim_users[,6]),keep.rownames = TRUE)[])
+> names(x) = c('critic','similarity')
+> ratings_t =  merge(x = ratings_t, y = x, by = "critic", all.x = TRUE)
+> View(ratings_t)
+> #mutiply rating with similarity values
+> ratings_t$sim_rating = ratings_t$rating*ratings_t$similarity
+> View(ratings_t$sim_rating)
+> #predicting the non rated titles
+> result = ratings_t %>% group_by(title) %>% summarise(sum(sim_rating)/sum(similarity))
+Warning message:
+package ‘bindrcpp’ was built under R version 3.3.3 
+> View(result)
+
+
+> #function to make recommendations 
+> generateRecommendations <- function(userId){
++   rating_critic  = setDT(movie_ratings[colnames(movie_ratings)[userId]],keep.rownames = TRUE)[]
++   names(rating_critic) = c('title','rating')
++   titles_na_critic = rating_critic$title[is.na(rating_critic$rating)]
++   ratings_t =ratings[ratings$title %in% titles_na_critic,]
++   #add similarity values for each user as new variable
++   x = (setDT(data.frame(sim_users[,userId]),keep.rownames = TRUE)[])
++   names(x) = c('critic','similarity')
++   ratings_t =  merge(x = ratings_t, y = x, by = "critic", all.x = TRUE)
++   #mutiply rating with similarity values
++   ratings_t$sim_rating = ratings_t$rating*ratings_t$similarity
++   #predicting the non rated titles
++   result = ratings_t %>% group_by(title) %>% summarise(sum(sim_rating)/sum(similarity))
++   return(result)
++ }
+> generateRecommendations(1) 
+# A tibble: 1 x 2
+              title `sum(sim_rating)/sum(similarity)`
+             <fctr>                             <dbl>
+1 Lady in the Water                          2.856137
+> generateRecommendations(2)
+# A tibble: 0 x 2
+# ... with 2 variables: title <fctr>, sum(sim_rating)/sum(similarity) <lgl>
+> generateRecommendations(3)
+# A tibble: 1 x 2
+         title `sum(sim_rating)/sum(similarity)`
+        <fctr>                             <dbl>
+1 Just My Luck                          2.409926
+> generateRecommendations(4)
+# A tibble: 0 x 2
+# ... with 2 variables: title <fctr>, sum(sim_rating)/sum(similarity) <lgl>
+> generateRecommendations(5)
+# A tibble: 0 x 2
+# ... with 2 variables: title <fctr>, sum(sim_rating)/sum(similarity) <lgl>
+> generateRecommendations(6)
+# A tibble: 3 x 2
+               title `sum(sim_rating)/sum(similarity)`
+              <fctr>                             <dbl>
+1       Just My Luck                          2.530981
+2  Lady in the Water                          2.832550
+3 The Night Listener                          3.347790
+> 
+
+
+
+
